@@ -1,0 +1,20 @@
+{
+    "name": "nathan/rooms",
+    "authors": [
+        {
+            "name": "Nathan Heinrich",
+            "email": "nathan_heinrich@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "xHeinrich\\Rooms\\RoomsServiceProvider"
+            ]
+        }
+    }
+}
