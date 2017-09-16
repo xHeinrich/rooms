@@ -1,0 +1,76 @@
+.user-container {
+  background-color: $color_dark_1;
+  padding: 10px 5px;
+  h5 {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    color: darken(#fff, 30%);
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    &.user-list {
+      li {
+        &.user {
+          a {
+            color: darken(#fff, 30%);
+            margin: 1px 4px;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            transition: color 0.3s, background 0.3s, border 0.3s;
+            text-decoration: none;
+            &:hover,
+            &.active {
+              color: #fff;
+              background: $color_dark_3;
+              .avatar {
+                .status {
+                  border: 2px solid $color_dark_3;
+                }
+              }
+            }
+            .username {
+              padding-left: 10px;
+            }
+            .avatar {
+              position: relative;
+              width: 30px;
+              height: 30px;
+              border-radius: 15px;
+              .status {
+                width: 15px;
+                height: 15px;
+                background: #fff;
+                border-radius: 15px;
+                position: absolute;
+                bottom: -3px;
+                right: -3px;
+                border: 2px solid $color-dark_1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-state {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-left: 10px;
+  &.offline {
+    background: red;
+  }
+  &.online {
+    background: green;
+  }
+  &.away {
+    background: orange;
+  }
+}

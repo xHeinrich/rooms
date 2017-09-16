@@ -41,7 +41,7 @@ class RoomsServiceProvider extends ServiceProvider
         Route::group([
             'prefix' => 'rooms',
             'namespace' => 'xHeinrich\Rooms\Http\Controllers',
-            'middleware' => 'web',
+            'middleware' => ['web', 'auth'],
         ], function () {
             $this->loadRoutesFrom(__DIR__.'/../routes/routes.php');
         });
